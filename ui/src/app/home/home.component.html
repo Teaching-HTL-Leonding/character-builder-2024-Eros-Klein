@@ -1,0 +1,43 @@
+<div id="home-container">
+  <div id="input-form">
+    <div>
+      <label for="eye">Eye</label>
+      <select id="eye" [(ngModel)]="eye">
+        @for(types of this.characterService.getAllPossibleTypes().eye; track $index){
+          <option [value]="types">{{types}}</option>
+        }
+      </select>
+    </div>
+    <div>
+      <label for="hammer">Has Hammer</label>
+      <input id="hammer" type="checkbox" [(ngModel)]="hasHammer">
+    </div>
+    <div>
+      <label for="mouth">Mouth</label>
+      <select id="mouth" [(ngModel)]="mouth">
+        @for(types of this.characterService.getAllPossibleTypes().mouth; track $index){
+          <option [value]="types">{{types}}</option>
+        }
+      </select>
+    </div>
+    <div>
+      <label for="rightHand">Right Hand</label>
+      <select id="rightHand" [(ngModel)]="rightHand">
+        @for(types of this.characterService.getAllPossibleTypes().rightHand; track $index){
+          <option [value]="types">{{types}}</option>
+        }
+      </select>
+    </div>
+    <div>
+      <label for="tail">Has Hammer</label>
+      <input id="tail" type="checkbox" [(ngModel)]="hasTail">
+    </div>
+    <div>
+      <button (click)="submitData()">Build</button>
+      <button (click)="fillWithRandomData()">Feeling Lucky...</button>
+    </div>
+  </div>
+  <div id="character-example">
+    <img alt="" [src]="imageUrl()">
+  </div>
+</div>

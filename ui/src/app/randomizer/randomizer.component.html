@@ -1,0 +1,10 @@
+<div id="randomizer-container">
+  <div id="context-menu">
+    <button (click)="grow()">+</button>
+    <button (click)="shrink()">-</button>
+    <button (click)="generateNewCharacter()">Next</button>
+  </div>
+  <div id="image-container">
+    <img [src]="characterUrl() + '?scale=' + size()" alt="image">
+  </div>
+</div>
