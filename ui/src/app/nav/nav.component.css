@@ -1,0 +1,29 @@
+nav {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 1rem;
+
+  padding-inline: 3rem;
+
+  background-color: #525252;
+  box-shadow: 0 0 5px 5px black;
+}
+
+nav > p {
+  font-weight: 800;
+  font-size: 2rem;
+  padding-inline: 2rem;
+  color: lightgray;
+}
+
+nav > a {
+  color: darkgray;
+  text-decoration-color: transparent;
+  font-size: 1.25rem;
+  transition: all ease-in-out 0.3s;
+}
+
+.active{
+  transform: scale(1.1);
+}

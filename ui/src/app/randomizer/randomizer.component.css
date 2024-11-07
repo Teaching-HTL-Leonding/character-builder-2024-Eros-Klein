@@ -1,0 +1,29 @@
+#randomizer-container{
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+
+  gap: 2rem;
+}
+
+#context-menu{
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+}
+
+#context-menu > button{
+  width: 5rem;
+  aspect-ratio: 1/1;
+  background-color: dodgerblue;
+  border: none;
+  border-radius: 1rem;
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
+
+  cursor: pointer;
+}
